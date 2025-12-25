@@ -1,6 +1,12 @@
 import { useState } from "react";
 import { View, Pressable } from "react-native";
 
+const Square ({value, onSquareClick}) => {
+    return (
+        
+    )
+}
+
 export default function Board() {
   const [board, setBoard] = useState(
     Array(20)
@@ -107,7 +113,6 @@ export default function Board() {
       {board.map((row, rowIndex) => {
         return (
           <View key={rowIndex} style={{ flexDirection: "row" }}>
-            <View>{status}</View>
             {row.map((col, colIndex) => {
               return (
                 <Pressable
